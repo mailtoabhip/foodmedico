@@ -5,46 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FoodMedi.Co – By Gauri Pillai</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ═══ HEADER ═══ -->
   <header class="header">
-    <!-- Top-left logo -->
     <a href="#" class="logo">
-      <span class="logo-main">FOOD<br>MEDI.CO</span>
-      <span class="logo-sub">BY GAURI</span>
+      <div class="logo-top">FOOD</div>
+      <div class="logo-mid">MEDI.CO</div>
+      <div class="logo-sub">BY GAURI</div>
     </a>
-
-    <!-- Top-right menu + social -->
     <div class="header-right">
-      <button class="menu-toggle" onclick="toggleNav()">
-        <div class="hamburger-lines">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <span class="menu-word">menu</span>
+      <button class="menu-btn" onclick="toggleNav()">
+        <div class="burger"><span></span><span></span><span></span></div>
+        <span class="menu-lbl">menu</span>
       </button>
       <div class="header-social">
-        <!-- Facebook -->
-        <a href="https://www.linkedin.com/in/gauri-pillai-aa09041b8/" aria-label="LinkedIn" target="_blank">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <a href="https://www.linkedin.com/in/gauri-pillai-aa09041b8/" target="_blank">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <!-- Instagram -->
-        <a href="https://wa.me/8652018666" aria-label="WhatsApp" target="_blank">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <a href="https://wa.me/8652018666" target="_blank">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
         </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/gauri-pillai-aa09041b8/" aria-label="LinkedIn2" target="_blank">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <a href="mailto:mail.foodmedico@gmail.com">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- SLIDE-OUT NAV OVERLAY -->
+  <!-- Slide-out nav -->
   <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
   <nav class="slide-nav" id="slideNav">
     <button class="nav-close" onclick="toggleNav()">✕ close</button>
@@ -56,199 +47,200 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- ═══ HERO ═══ -->
   <section class="hero">
-    <!-- Left: photo card -->
-    <div class="hero-photo-wrap">
-      <div class="hero-photo">
-        <!-- Replace with: <img src="your-photo.jpg" alt="Your Name" /> -->
-        <div class="photo-placeholder">
-          <span>Your Photo Here</span>
+    <!-- Left: framed photo card -->
+    <div class="hero-photo-col">
+      <div class="hero-photo-frame">
+        <div class="hero-photo-inner">
+          <img src="gauri-hero.jpg" alt="Gauri Pillai" onerror="this.style.display='none';this.parentElement.classList.add('no-img')" />
         </div>
       </div>
     </div>
-
     <!-- Right: text -->
-    <div class="hero-text">
+    <div class="hero-text-col">
       <p class="eyebrow">NUTRITION GUIDANCE, CLEARLY EXPLAINED</p>
       <h1>Helping you transform your health through the power of nutrition.</h1>
-      <p class="hero-sub">Embracing better nutrition starts with clear guidance, practical habits, and evidence you can trust.</p>
-      <a href="#about" class="link-arrow">GET TO KNOW ME</a>
+      <p class="hero-desc">Embracing better nutrition starts with clear guidance, practical habits, and evidence you can trust.</p>
+      <a href="#about" class="cta-link">GET TO KNOW ME</a>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- Food image strip -->
+  <div class="food-strip">
+    <img src="food-strip.jpg" alt="Fresh food" onerror="this.parentElement.classList.add('no-img-strip')" />
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
   <section class="about" id="about">
-    <div class="about-inner">
-      <div class="about-photo">
-        <div class="photo-placeholder tall">
-          <span>Your Photo</span>
-        </div>
-      </div>
-      <div class="about-text">
-        <p class="eyebrow">A PERSONALISED APPROACH TO NUTRITION</p>
-        <h2>Hey! I'm Gauri</h2>
-        <h3>Registered Dietitian & Nutrition Coach</h3>
-        <p>I've spent years helping people navigate confusing diet trends and build habits that actually last. I understand what it's like to struggle with food choices, energy crashes, and the pressure of "eating right"—which is why I value simplicity, balance, and evidence over extremes.</p>
-        <p>There isn't one perfect way to eat. Real life is more nuanced. I focus on helping you move beyond restrictive diets, cut through the noise, and make thoughtful, informed nutrition decisions that work in your real world.</p>
-        <a href="#services" class="btn-primary">BOOK CONSULTATION</a>
-      </div>
+    <div class="about-text-col">
+      <p class="eyebrow">A PERSONALISED APPROACH TO NUTRITION</p>
+      <h2>Hey! I'm Gauri</h2>
+      <h3>Registered Dietitian &amp; Nutrition Coach</h3>
+      <p>I've spent years helping people navigate confusing diet trends and build habits that actually last. I understand what it's like to struggle with food choices, energy crashes, and the pressure of "eating right"—which is why I value simplicity, balance, and evidence over extremes.</p>
+      <p>There isn't one perfect way to eat. Real life is more nuanced.</p>
+      <p>I focus on helping you move beyond restrictive diets, cut through the noise, and make thoughtful, informed nutrition decisions that work in your real world.</p>
+      <a href="https://pages.razorpay.com/pl_RT2yYOCs3U2DpR/view" target="_blank" class="cta-btn">GET TO KNOW ME</a>
+    </div>
+    <div class="about-photo-col">
+      <img src="gauri-about.jpg" alt="Gauri Pillai" onerror="this.parentElement.classList.add('no-img-about')" />
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- ═══ SERVICES (replaces Podcast section) ═══ -->
+  <section class="services-section" id="services">
+    <div class="services-photo-col">
+      <img src="gauri-services.jpg" alt="Nutrition consultation" onerror="this.parentElement.classList.add('no-img-svc')" />
+    </div>
+    <div class="services-text-col">
+      <p class="eyebrow-script">Work with me!</p>
+      <h2 class="services-title">1:1 &amp; Group<br>Nutrition Consultations</h2>
+      <p class="services-tag">— QUALIFIED DIETITIAN —</p>
+      <p class="services-desc">Whether you're looking for personalised 1:1 guidance or the motivation of a group setting, I'm here to help you build sustainable habits that fit your real life.</p>
+      <div class="services-list">
+        <a href="https://pages.razorpay.com/pl_RT2yYOCs3U2DpR/view" target="_blank" class="service-row">
+          <span>1:1 Personalised Consultation</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#contact" class="service-row">
+          <span>Group Consultation for Support &amp; Motivation</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#contact" class="service-row">
+          <span>Corporate Wellness Solutions</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+      <a href="https://pages.razorpay.com/pl_RT2yYOCs3U2DpR/view" target="_blank" class="cta-btn-outline">BOOK NOW</a>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
   <section class="testimonials" id="testimonials">
-    <div class="testi-label">KIND WORDS</div>
-    <div class="testi-slider">
+    <p class="testi-label">KIND WORDS</p>
+    <div class="testi-wrap">
+      <button class="testi-arrow left" onclick="slideTesti(-1)">&#8592;</button>
       <div class="testi-track" id="testiTrack">
 
         <div class="testi-card">
           <p class="testi-quote">"My habits feel sustainable now, with no crash diets."</p>
-          <p class="testi-name">Harmeet Singh</p>
           <p class="testi-body">Gauri's approach is truly professional and supportive, and she tailors everything to your routine. I started fitting into clothes I never thought I'd wear again. It changed my health completely.</p>
+          <p class="testi-sig">Harmeet Singh</p>
         </div>
 
         <div class="testi-card">
           <p class="testi-quote">"I've become so much more mindful with my meals."</p>
-          <p class="testi-name">Kiranjeet Kaur</p>
           <p class="testi-body">I no longer rush, and my cravings for sweets and junk have almost disappeared. People around us have even noticed our weight dropping. Thank you, Gauri, for helping us build habits that feel natural.</p>
+          <p class="testi-sig">Kiranjeet Kaur</p>
         </div>
 
         <div class="testi-card">
           <p class="testi-quote">"I finally feel in control of my choices."</p>
-          <p class="testi-name">Aditi Sharma</p>
-          <p class="testi-body">I always struggled with emotional eating and inconsistent habits. Working with Gauri helped me understand why I ate the way I did. I'm lighter, happier, and my relationship with food feels peaceful for the first time.</p>
+          <p class="testi-body">I always struggled with emotional eating and inconsistent habits. Working with Gauri helped me understand why I ate the way I did. I'm lighter, happier, and my relationship with food feels peaceful.</p>
+          <p class="testi-sig">Aditi Sharma</p>
         </div>
 
         <div class="testi-card">
           <p class="testi-quote">"I now feel active throughout the day."</p>
-          <p class="testi-name">Rahul Mehta</p>
           <p class="testi-body">My energy levels were constantly dipping, and I felt tired even after sleeping well. Gauri's personalised nutrition plan helped me stabilise my metabolism — no restrictive dieting.</p>
+          <p class="testi-sig">Rahul Mehta</p>
         </div>
 
         <div class="testi-card">
           <p class="testi-quote">"I make healthier choices without overthinking."</p>
-          <p class="testi-name">Neha Patil</p>
           <p class="testi-body">Gauri changed my mindset completely. She made nutrition simple. My skin improved, my mood balanced, and I feel healthier than ever.</p>
+          <p class="testi-sig">Neha Patil</p>
         </div>
 
         <div class="testi-card">
           <p class="testi-quote">"Gauri guided me through habits that fit my lifestyle."</p>
-          <p class="testi-name">Ananya Nair</p>
           <p class="testi-body">Working odd hours meant I barely ate right. Gauri didn't just give me a plan — she guided me through habits that fit my lifestyle. My cravings reduced, digestion improved.</p>
-        </div>
-
-        <div class="testi-card">
-          <p class="testi-quote">"She helped us build a shared routine that worked for both of us."</p>
-          <p class="testi-name">Rohan &amp; Priya</p>
-          <p class="testi-body">We joined Gauri's program because our eating patterns were completely different. She helped us build a shared routine. Now we cook together and feel healthier as a team.</p>
-        </div>
-
-        <div class="testi-card">
-          <p class="testi-quote">"Gauri balanced our needs and goals beautifully."</p>
-          <p class="testi-name">Amrita &amp; Kunal</p>
-          <p class="testi-body">As a couple, we struggled to stay consistent. Gauri balanced our needs and goals beautifully. We've both lost weight steadily, and our home environment feels more positive and health-focused.</p>
+          <p class="testi-sig">Ananya Nair</p>
         </div>
 
       </div>
-      <div class="testi-arrows">
-        <button onclick="slideTesti(-1)">&#8592;</button>
-        <button onclick="slideTesti(1)">&#8594;</button>
-      </div>
+      <button class="testi-arrow right" onclick="slideTesti(1)">&#8594;</button>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services-section" id="services">
-    <p class="eyebrow center">SERVICES</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <span class="service-num">01</span>
-        <h3>1:1 Consultation</h3>
-        <p>Personalised nutrition sessions tailored entirely to your lifestyle, goals, and routine. Empower yourself with the knowledge to make informed dietary choices.</p>
-        <a href="https://pages.razorpay.com/pl_RT2yYOCs3U2DpR/view" target="_blank" class="link-arrow">KNOW MORE &amp; BOOK</a>
+  <!-- ═══ BLOG ═══ -->
+  <section class="blog-section">
+    <div class="blog-featured">
+      <div class="blog-featured-img">
+        <img src="blog-1.jpg" alt="Blog post" onerror="this.parentElement.classList.add('no-img-blog')" />
       </div>
-      <div class="service-card">
-        <span class="service-num">02</span>
-        <h3>Group Consultation</h3>
-        <p>Join group programs for peer support, accountability, and motivation on your journey towards better health. Build habits alongside others who share your goals.</p>
-        <a href="#contact" class="link-arrow">CONTACT ME FOR DETAILS</a>
-      </div>
-      <div class="service-card">
-        <span class="service-num">03</span>
-        <h3>Corporate Wellness</h3>
-        <p>Comprehensive wellness programs customised for organisations to promote employee health and productivity through nutrition education and ongoing support.</p>
-        <a href="#contact" class="link-arrow">CONTACT ME FOR DETAILS</a>
+      <div class="blog-featured-text">
+        <p class="eyebrow">RECENTLY ON THE BLOG</p>
+        <h3>How to Build Sustainable Eating Habits Without Dieting</h3>
+        <p>Most diets fail because they're built on restriction. Here's how to create a nutrition approach that actually sticks — one small habit at a time.</p>
+        <a href="#" class="cta-btn-outline">READ THE POST</a>
       </div>
     </div>
-  </section>
-
-  <!-- BLOG / RECENT POSTS -->
-  <section class="blog" id="blog">
-    <p class="eyebrow center">NUTRITION TIPS</p>
-    <div class="blog-grid">
-      <article class="blog-card">
-        <div class="blog-img-placeholder"></div>
-        <span class="blog-tag">Habits</span>
-        <h3><a href="#">How to Build Sustainable Eating Habits Without Dieting</a></h3>
-        <a href="#" class="read-post">read the post</a>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img-placeholder"></div>
-        <span class="blog-tag">Metabolism</span>
-        <h3><a href="#">Why Your Energy Crashes — And How Nutrition Can Fix It</a></h3>
-        <a href="#" class="read-post">read the post</a>
-      </article>
-      <article class="blog-card">
-        <div class="blog-img-placeholder"></div>
+    <div class="blog-sidebar">
+      <div class="blog-sidebar-item">
+        <span class="blog-tag">Nutrition Tips</span>
+        <a href="#" class="blog-sidebar-title">Why Your Energy Crashes — And How Nutrition Can Fix It</a>
+        <a href="#" class="blog-read">READ</a>
+      </div>
+      <div class="blog-sidebar-item">
         <span class="blog-tag">Mindset</span>
-        <h3><a href="#">Breaking Free From Emotional Eating: A Practical Guide</a></h3>
-        <a href="#" class="read-post">read the post</a>
-      </article>
+        <a href="#" class="blog-sidebar-title">Breaking Free From Emotional Eating: A Practical Guide</a>
+        <a href="#" class="blog-read">READ</a>
+      </div>
+      <div class="blog-sidebar-item">
+        <span class="blog-tag">Metabolism</span>
+        <a href="#" class="blog-sidebar-title">Understanding Your Metabolism: What Actually Slows It Down</a>
+        <a href="#" class="blog-read">READ</a>
+      </div>
+      <div class="blog-sidebar-item">
+        <span class="blog-tag">Couples</span>
+        <a href="#" class="blog-sidebar-title">How Couples Can Build Healthy Eating Habits Together</a>
+        <a href="#" class="blog-read">READ</a>
+      </div>
+      <button class="blog-next-btn">Next</button>
     </div>
   </section>
 
-  <!-- COLLABORATE CTA -->
+  <!-- ═══ COLLABORATE / CTA ═══ -->
   <section class="collaborate" id="contact">
-    <div class="collab-inner">
-      <p class="eyebrow">LOOKING TO WORK TOGETHER?</p>
-      <h2>Ready to transform your health?</h2>
-      <a href="mailto:mail.foodmedico@gmail.com" class="btn-outline-dark">GET IN TOUCH</a>
-    </div>
-    <div class="collab-photo">
-      <div class="photo-placeholder"></div>
+    <div class="collab-overlay">
+      <p class="eyebrow light">LOOKING TO WORK TOGETHER?</p>
+      <h2>Ready to transform your health through the power of nutrition.</h2>
+      <a href="mailto:mail.foodmedico@gmail.com" class="cta-btn-white">GET IN TOUCH</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo-col">
-        <div class="footer-logo">FOOD<br>MEDI.CO<br><span>BY GAURI</span></div>
-        <p class="footer-tagline">MAKING NUTRITION SIMPLE, JOYFUL, AND SUSTAINABLE.</p>
+    <div class="footer-left">
+      <p class="footer-tagline">MAKING NUTRITION SIMPLE,<br>JOYFUL, AND SUSTAINABLE.</p>
+      <p class="footer-desc">Founded by registered dietitian Gauri Pillai, FoodMedi.Co shares approachable, evidence-based insights to inspire a balanced, healthy lifestyle. Gauri helps you understand that eating well doesn't have to be complicated — it just has to feel good and fit your life.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/gauri-pillai-aa09041b8/" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://wa.me/8652018666" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+        <a href="mailto:mail.foodmedico@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
       </div>
-      <div class="footer-nav-col">
-        <p class="eyebrow">explore</p>
-        <nav class="footer-links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#testimonials">Kind Words</a>
-          <a href="#contact">Contact</a>
-          <a href="#">Blog</a>
-        </nav>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/gauri-pillai-aa09041b8/" aria-label="LinkedIn" target="_blank">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://wa.me/8652018666" aria-label="WhatsApp" target="_blank">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          </a>
-        </div>
-      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-explore">explore</p>
+      <nav class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Kind Words</a>
+        <a href="#services">Services</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
     <div class="footer-bottom">
-      <span>© FOODMEDI.CO 2026 | BY GAURI PILLAI</span>
-      <a href="#">LEGAL</a>
+      <span>© FOODMEDI.CO 2026 &nbsp;|&nbsp; BY GAURI PILLAI</span>
+      <span>mail.foodmedico@gmail.com &nbsp;|&nbsp; +91 86520 18666</span>
     </div>
   </footer>
 
@@ -258,14 +250,11 @@
       document.getElementById('navOverlay').classList.toggle('open');
       document.body.classList.toggle('no-scroll');
     }
-
     function slideTesti(dir) {
       const track = document.getElementById('testiTrack');
       const card = track.querySelector('.testi-card');
-      const cardW = card.offsetWidth + 24;
-      track.scrollBy({ left: dir * cardW, behavior: 'smooth' });
+      track.scrollBy({ left: dir * (card.offsetWidth + 1), behavior: 'smooth' });
     }
   </script>
-
 </body>
 </html>
